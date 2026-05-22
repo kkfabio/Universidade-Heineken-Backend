@@ -29,4 +29,7 @@ public class User {
     @Column(nullable = false)
     @Builder.Default
     private String role = "USER";
+
+    @Column(unique = true)
+    private String cpf;
 }
