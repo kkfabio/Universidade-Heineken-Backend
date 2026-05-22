@@ -17,8 +17,12 @@ public class AuthService {
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
     private final JwtService jwtService;
+    private final PasswordService passwordService;
 
     public AuthResponse login(LoginRequest request) {
+        // Verifica se a senha temporária expirou antes de autenticar
+        passwordService.restorePasswordIfExpired(request.getEmail());
+
         Optional<User> userOpt = userRepository.findByEmail(request.getEmail());
 
         if (userOpt.isEmpty()) {

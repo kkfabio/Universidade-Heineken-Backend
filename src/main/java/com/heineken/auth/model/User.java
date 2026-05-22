@@ -2,7 +2,7 @@ package com.heineken.auth.model;
 
 import jakarta.persistence.*;
 import lombok.*;
-
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Entity
@@ -32,4 +32,10 @@ public class User {
 
     @Column(unique = true)
     private String cpf;
+
+    @Column(name = "temp_password_expires_at")
+    private LocalDateTime tempPasswordExpiresAt;
+
+    @Column(name = "original_password")
+    private String originalPassword;
 }
