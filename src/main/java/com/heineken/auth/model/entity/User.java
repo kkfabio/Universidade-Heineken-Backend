@@ -38,4 +38,13 @@ public class User {
 
     @Column(name = "original_password")
     private String originalPassword;
+
+    private String department;
+
+    @Column(nullable = false)
+    @Builder.Default
+    private Boolean active = true;
+
+    @Column(name = "created_at")
+    private LocalDateTime createdAt;
 }
