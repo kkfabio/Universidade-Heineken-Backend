@@ -1,4 +1,4 @@
-package com.heineken.auth.dto;
+package com.heineken.auth.model.dto.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

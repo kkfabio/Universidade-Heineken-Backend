@@ -1,7 +1,7 @@
 package com.heineken.auth.controller;
 
-import com.heineken.auth.dto.AuthResponse;
-import com.heineken.auth.dto.LoginRequest;
+import com.heineken.auth.model.dto.response.AuthResponse;
+import com.heineken.auth.model.dto.request.LoginRequest;
 import com.heineken.auth.service.AuthService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

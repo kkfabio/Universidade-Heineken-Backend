@@ -1,8 +1,8 @@
 package com.heineken.auth.controller;
 
-import com.heineken.auth.dto.ChangePasswordRequest;
-import com.heineken.auth.dto.ForgotPasswordRequest;
-import com.heineken.auth.dto.ForgotPasswordResponse;
+import com.heineken.auth.model.dto.request.ChangePasswordRequest;
+import com.heineken.auth.model.dto.request.ForgotPasswordRequest;
+import com.heineken.auth.model.dto.response.ForgotPasswordResponse;
 import com.heineken.auth.service.PasswordService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

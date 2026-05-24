@@ -1,4 +1,4 @@
-package com.heineken.auth.model;
+package com.heineken.auth.model.entity;
 
 import jakarta.persistence.*;
 import lombok.*;

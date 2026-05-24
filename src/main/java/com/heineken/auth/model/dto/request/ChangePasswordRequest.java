@@ -1,4 +1,4 @@
-package com.heineken.auth.dto;
+package com.heineken.auth.model.dto.request;
 
 import lombok.Data;
 
