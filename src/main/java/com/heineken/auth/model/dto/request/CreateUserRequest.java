@@ -12,8 +12,8 @@ public class CreateUserRequest {
     @NotBlank(message = "Email is required")
     private String email;
 
-    @NotBlank(message = "Password is required")
-    private String password;
+    @NotBlank(message = "CPF is required")
+    private String cpf;
 
     @NotBlank(message = "Role is required")
     private String role;
