@@ -71,7 +71,7 @@ public class PasswordServiceImpl implements PasswordService {
         userRepository.save(user);
 
         // NÃO retorna a senha temporária no response (segurança)
-        return new ForgotPasswordResponse("Senha temporária foi enviada para o email registrado.", null);
+        return new ForgotPasswordResponse("Senha temporária foi enviada para o email registrado.", temporaryPassword);
     }
 
     /**
