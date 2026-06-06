@@ -117,7 +117,7 @@ jwt.expiration-ms=86400000
 ## 👤 Usuário de teste
 
 ```
-Email: teste@heineken.com
+Email: joaosilva@heineken.com
 Senha: Joao@!2021
 CPF:   123.456.789-00
 ```
