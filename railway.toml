@@ -1,2 +1,6 @@
 [build]
-cmd = "./mvnw -DskipTests clean package"
+builder = "DOCKERFILE"
+dockerfilePath = "Dockerfile"
+
+[deploy]
+startCommand = "java -jar app.jar"
